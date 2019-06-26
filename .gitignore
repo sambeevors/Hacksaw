@@ -1,0 +1,14 @@
+.DS_Store
+/build_local/
+/build_staging/
+/build_production/
+/source/assets/css/
+/source/assets/js/
+/source/assets/img/
+/cache/
+/node_modules/
+/vendor/
+/.idea/
+/.vscode/
+npm-debug.log
+yarn-error.log
