@@ -7,19 +7,19 @@
     <p class="text-blue-800 mt-2">Thank <em>f#&k</em> for the JAMstack</p>
     <ul class="flex flex-wrap justify-center items-center -mx-2 mt-6">
         @include('_partials.logo', [
-            'src' => mix('/img/svg/tailwind.svg'),
+            'src' => '/img/svg/tailwind.svg',
             'href' => 'https://tailwindcss.com/docs/installation/',
             'alt' => 'Tailwind',
             'width' => 150
         ])
         @include('_partials.logo', [
-            'src' => mix('/img/svg/jigsaw.svg'),
+            'src' => '/img/svg/jigsaw.svg',
             'href' => 'https://jigsaw.tighten.co/docs/installation/',
             'alt' => 'Jigsaw',
             'width' => 40
         ])
         @include('_partials.logo', [
-            'src' => mix('/img/svg/babel.svg'),
+            'src' => '/img/svg/babel.svg',
             'href' => 'https://babeljs.io/docs/en/',
             'alt' => 'Babel',
             'width' => 100
