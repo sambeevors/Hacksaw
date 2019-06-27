@@ -23,7 +23,14 @@ mix.webpackConfig({
 mix
   .options({
     processCssUrls: false,
-    postCss: [require('postcss-import'), require('tailwindcss')()]
+    postCss: [
+      require('postcss-import'),
+      require('tailwindcss')(),
+      require('precss')({
+        unresolved: 'ignore'
+      }),
+      require('autoprefixer')
+    ]
   })
   .postCss('source/_assets/css/main.css', 'css/main.css')
   .purgeCss({
