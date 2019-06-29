@@ -24,7 +24,9 @@ mix
   .options({
     processCssUrls: false,
     postCss: [
-      require('postcss-import'),
+      require('postcss-easy-import', {
+        prefix: '_'
+      }),
       require('tailwindcss')(),
       require('precss')({
         unresolved: 'ignore'
