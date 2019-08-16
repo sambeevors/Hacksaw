@@ -22,7 +22,10 @@
     "yargs": "^13.2.4"
   },
   "dependencies": {
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/preset-env": "^7.5.5",
     "autoprefixer": "^9.6.0",
+    "core-js": "2",
     "postcss-easy-import": "^3.0.0",
     "precss": "^4.0.0"
   }

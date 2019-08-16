@@ -17,7 +17,11 @@ mix.webpackConfig({
       '!source/assets/**/*'
     ]),
     build.imageMin()
-  ]
+  ],
+  output: {
+    filename: '[name].js',
+    chunkFilename: '../assets/js/[name].js'
+  }
 })
 
 mix
@@ -38,6 +42,6 @@ mix
   .purgeCss({
     folders: ['source']
   })
-  .babel(['source/_assets/js/main.js'], 'source/assets/js/main.js')
+  .js('source/_assets/js/main.js', 'source/assets/js')
   .copy('source/_assets/img', 'source/assets/img', false)
   .version(['source/assets/img'])
